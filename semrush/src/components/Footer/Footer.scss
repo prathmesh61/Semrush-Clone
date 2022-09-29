@@ -1,0 +1,146 @@
+@import '../../Styles/mixin';
+
+
+.footer {
+    @include mt;
+    background-color: $footer-bg;
+
+    .footer_wrapper {
+        @include container;
+        @include pa;
+        @include flex-center;
+        flex-direction: column;
+        gap: 3rem;
+
+        .footer_up {
+            @include flex-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+
+            @media (max-width:720px) {
+                @include flex-center;
+            }
+
+            .footer_border-cta {
+                @include item-center;
+                gap: 1rem;
+
+
+
+                @media (max-width:720px) {
+                    flex-direction: column;
+                }
+
+                button {
+                    @include border-cta;
+                    text-align: left;
+                }
+
+                P {
+                    color: $grey;
+                    text-align: center
+                }
+            }
+
+            .footer_green-cta {
+                .orange {
+                    @include orange-cta;
+                }
+            }
+
+
+        }
+
+        .footer_links-container {
+            @include item-center;
+
+            .footer_links {
+                @include item-center;
+                flex-wrap: wrap;
+                gap: 7rem;
+                color: $white;
+
+                .semrush_links {
+                    h3 {
+                        font-size: 1rem;
+                    }
+
+                    li {
+                        font-size: .6rem;
+                        color: $grey;
+                        cursor: pointer;
+                        margin-top: .4rem;
+
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+
+                .Help_links {
+                    h3 {
+                        font-size: 1rem;
+                    }
+
+                    li {
+                        font-size: .6rem;
+                        color: $grey;
+                        cursor: pointer;
+                        margin-top: .4rem;
+
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+
+                .Community_links {
+                    h3 {
+                        font-size: 1rem;
+                    }
+
+                    li {
+                        font-size: .6rem;
+                        color: $grey;
+                        cursor: pointer;
+                        margin-top: .4rem;
+
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+
+                .Social_links {
+                    h3 {
+                        font-size: 1rem;
+                    }
+
+                    li {
+                        font-size: .6rem;
+                        color: $grey;
+                        cursor: pointer;
+                        margin-top: .4rem;
+
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+
+    }
+
+    .footer_end {
+        p {
+            color: $grey;
+            font-size: .6rem;
+            text-align: center;
+        }
+    }
+}

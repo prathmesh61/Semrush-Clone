@@ -1,0 +1,53 @@
+@import '../../Styles/mixin';
+
+
+.offer {
+    background-color: $dark-blue;
+    width: 100%;
+
+
+
+    .offer_wrapper {
+        width: 100%;
+
+        @include mt;
+        @include pa;
+
+
+        .offer_content {
+            @include flex-center;
+            flex-direction: column;
+            margin-top: .5rem;
+            @include container;
+
+
+            h2 {
+                font-size: 2.2rem;
+                font-weight: 700;
+                color: $white;
+                text-align: center;
+            }
+
+            p {
+                font-size: 1.1rem;
+                font-style: italic;
+                color: $white;
+                margin-top: .5rem;
+                text-align: center
+            }
+
+            button {
+                @include orange-cta;
+                text-align: center;
+                margin-top: .5rem;
+                padding: .6rem 1.5rem;
+
+                @media (max-width:720px) {
+                    width: 80%;
+                }
+
+            }
+        }
+
+    }
+}

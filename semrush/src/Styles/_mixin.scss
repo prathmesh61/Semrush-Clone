@@ -1,0 +1,82 @@
+@import './colors';
+
+@mixin item-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+@mixin flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin pa {
+    padding: 1rem;
+}
+
+@mixin mt {
+    margin-top: 5rem;
+}
+
+@mixin green-cta {
+
+    padding: .2rem 1rem;
+    font-size: .8rem;
+    display: block;
+    background-color: $green;
+    color: $white;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    cursor: pointer;
+
+    &:hover {
+        scale: 1.030;
+    }
+
+}
+
+@mixin orange-cta {
+    padding: .2rem 1rem;
+    font-size: .8rem;
+    display: block;
+    background-color: $orange;
+    color: $white;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    cursor: pointer;
+
+    &:hover {
+        scale: 1.030;
+    }
+
+}
+
+@mixin border-cta {
+    padding: .2rem 1rem;
+    font-size: .8rem;
+    display: block;
+    background-color: transparent;
+    color: $white;
+    border: 1px solid $white;
+    outline: none;
+    border-radius: .3rem;
+    cursor: pointer;
+
+    &:hover {
+        scale: 1.030;
+    }
+}

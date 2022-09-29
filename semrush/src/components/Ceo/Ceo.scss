@@ -1,0 +1,78 @@
+@import '../../Styles/mixin';
+
+
+.ceo {
+
+    .ceo_wrapper {
+        @include flex-center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        @include mt;
+
+
+        .ceo_right {
+            h3 {
+                font-size: 2.2rem;
+                font-weight: 700;
+                text-align: center;
+            }
+
+            p {
+                font-size: 1rem;
+                font-style: italic;
+                margin-top: .3rem;
+                text-align: center;
+
+            }
+
+            .ul_item {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                margin-top: 1rem;
+                padding: .2rem;
+
+                @media (max-width:720px) {
+                    padding: .3rem;
+
+
+                }
+
+                li {
+                    font-size: .7rem;
+
+                    @media (max-width:720px) {
+                        font-size: .6rem;
+
+                    }
+                }
+
+                .orange {
+                    color: $orange;
+                    font-size: 1.2rem;
+                }
+            }
+
+            button {
+                @include orange-cta;
+                margin-top: 1.3rem;
+                padding: .8rem 1.5rem;
+
+                @media (max-width:720px) {
+                    width: 100%;
+                }
+            }
+        }
+
+        .ceo_left {
+            width: 50%;
+
+            img {
+                width: 80%;
+            }
+
+
+        }
+
+    }
+}

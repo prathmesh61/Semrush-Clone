@@ -1,0 +1,22 @@
+@import "./Styles/font";
+@import "./Styles/colors";
+@import "./Styles/mixin";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+body {
+    font-family: $font;
+    font-size: 62.5%;
+}

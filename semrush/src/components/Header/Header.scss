@@ -1,0 +1,105 @@
+@import '../../Styles/mixin';
+
+.header {
+    @include pa;
+    background-color: $black;
+    height: 58px;
+    width: 100%;
+    position: relative;
+
+    .menu {
+        display: none;
+
+        @media (max-width:720px) {
+            display: block;
+            position: absolute;
+            top: 1.4rem;
+            right: 2rem;
+            color: $white;
+            z-index: 100;
+            cursor: pointer;
+
+        }
+    }
+
+
+
+    .header_wrapper {
+        @include flex-between;
+        @include container;
+        width: 100%;
+
+        @media (max-width:720px) {
+
+            .ul_item.active {
+                left: 0;
+            }
+        }
+
+
+        .ul_item {
+            @include item-center;
+            gap: 2rem;
+
+            @media (max-width:720px) {
+                display: block;
+                position: absolute;
+                background-color: $orange;
+                height: 100vh;
+                width: 40%;
+                left: -100rem;
+                top: 0rem;
+                transition: 200ms ease-in-out;
+                color: $white;
+
+
+            }
+
+
+
+
+            li {
+                font-size: .8rem;
+                color: $grey;
+                cursor: pointer;
+
+                @media (max-width:720px) {
+                    color: $white;
+
+                    margin-top: 1rem;
+                    padding: 1rem;
+                    font-size: .7rem;
+
+
+                }
+
+                &:hover {
+                    color: $white;
+                }
+
+            }
+        }
+
+        .logo img {
+            width: 10rem;
+        }
+
+        .buttons {
+            @include item-center;
+            gap: 1rem;
+
+            @media (max-width:720px) {
+                display: none;
+            }
+
+            .border_cta {
+                @include border-cta;
+            }
+
+            .green_cta {
+                @include green-cta;
+            }
+        }
+
+    }
+}
